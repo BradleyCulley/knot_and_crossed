@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import GameBoard from "./GameBoard";
 
 const GamePlay = (props) => {
     const [startGame, setStartGame] = useState(false);
@@ -8,11 +9,12 @@ const GamePlay = (props) => {
       }
       return (
         <div>
-            <button className="state--title" type="button" onClick={showGamehandler}>Start Game</button> 
+            <button className="state--title" type="button" onClick={showGamehandler}>Start Game</button>
             <h2>{startGame ? "Game in play" : "Game not in play "}</h2>
+            <GameBoard/>
         </div>
     )
-      
+
 }
 
 export default GamePlay;

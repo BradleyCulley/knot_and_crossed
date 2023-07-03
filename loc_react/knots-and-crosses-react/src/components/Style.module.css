@@ -10,3 +10,12 @@
     margin-right: 4px;
     border-radius: 5px;
 }
+
+.gameGrid {
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
